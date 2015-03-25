@@ -14,6 +14,10 @@
 		60C313A61AC29883002C6478 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C313A51AC29883002C6478 /* Images.xcassets */; };
 		60C313A91AC29883002C6478 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60C313A71AC29883002C6478 /* LaunchScreen.xib */; };
 		60C313B51AC29883002C6478 /* Today_Extension_WidgetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C313B41AC29883002C6478 /* Today_Extension_WidgetTests.m */; };
+		60C313C51AC298C9002C6478 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C313C41AC298C9002C6478 /* NotificationCenter.framework */; };
+		60C313CB1AC298C9002C6478 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C313CA1AC298C9002C6478 /* TodayViewController.m */; };
+		60C313CD1AC298C9002C6478 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C313CC1AC298C9002C6478 /* MainInterface.storyboard */; };
+		60C313D01AC298C9002C6478 /* Used Space.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 60C313C21AC298C9002C6478 /* Used Space.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +28,28 @@
 			remoteGlobalIDString = 60C313941AC29883002C6478;
 			remoteInfo = "Today Extension Widget";
 		};
+		60C313CE1AC298C9002C6478 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60C3138D1AC29883002C6478 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60C313C11AC298C9002C6478;
+			remoteInfo = "Used Space";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60C313D41AC298C9002C6478 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				60C313D01AC298C9002C6478 /* Used Space.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		60C313951AC29883002C6478 /* Today Extension Widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Today Extension Widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +65,12 @@
 		60C313AE1AC29883002C6478 /* Today Extension WidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Today Extension WidgetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C313B31AC29883002C6478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60C313B41AC29883002C6478 /* Today_Extension_WidgetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Today_Extension_WidgetTests.m; sourceTree = "<group>"; };
+		60C313C21AC298C9002C6478 /* Used Space.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Used Space.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60C313C41AC298C9002C6478 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		60C313C81AC298C9002C6478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60C313C91AC298C9002C6478 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		60C313CA1AC298C9002C6478 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		60C313CC1AC298C9002C6478 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +88,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60C313BF1AC298C9002C6478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C313C51AC298C9002C6478 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +104,8 @@
 			children = (
 				60C313971AC29883002C6478 /* Today Extension Widget */,
 				60C313B11AC29883002C6478 /* Today Extension WidgetTests */,
+				60C313C61AC298C9002C6478 /* Used Space */,
+				60C313C31AC298C9002C6478 /* Frameworks */,
 				60C313961AC29883002C6478 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +115,7 @@
 			children = (
 				60C313951AC29883002C6478 /* Today Extension Widget.app */,
 				60C313AE1AC29883002C6478 /* Today Extension WidgetTests.xctest */,
+				60C313C21AC298C9002C6478 /* Used Space.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +161,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		60C313C31AC298C9002C6478 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60C313C41AC298C9002C6478 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60C313C61AC298C9002C6478 /* Used Space */ = {
+			isa = PBXGroup;
+			children = (
+				60C313C91AC298C9002C6478 /* TodayViewController.h */,
+				60C313CA1AC298C9002C6478 /* TodayViewController.m */,
+				60C313CC1AC298C9002C6478 /* MainInterface.storyboard */,
+				60C313C71AC298C9002C6478 /* Supporting Files */,
+			);
+			path = "Used Space";
+			sourceTree = "<group>";
+		};
+		60C313C71AC298C9002C6478 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60C313C81AC298C9002C6478 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +198,12 @@
 				60C313911AC29883002C6478 /* Sources */,
 				60C313921AC29883002C6478 /* Frameworks */,
 				60C313931AC29883002C6478 /* Resources */,
+				60C313D41AC298C9002C6478 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				60C313CF1AC298C9002C6478 /* PBXTargetDependency */,
 			);
 			name = "Today Extension Widget";
 			productName = "Today Extension Widget";
@@ -157,6 +228,23 @@
 			productReference = 60C313AE1AC29883002C6478 /* Today Extension WidgetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		60C313C11AC298C9002C6478 /* Used Space */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60C313D11AC298C9002C6478 /* Build configuration list for PBXNativeTarget "Used Space" */;
+			buildPhases = (
+				60C313BE1AC298C9002C6478 /* Sources */,
+				60C313BF1AC298C9002C6478 /* Frameworks */,
+				60C313C01AC298C9002C6478 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Used Space";
+			productName = "Used Space";
+			productReference = 60C313C21AC298C9002C6478 /* Used Space.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +260,9 @@
 					60C313AD1AC29883002C6478 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = 60C313941AC29883002C6478;
+					};
+					60C313C11AC298C9002C6478 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
@@ -190,6 +281,7 @@
 			targets = (
 				60C313941AC29883002C6478 /* Today Extension Widget */,
 				60C313AD1AC29883002C6478 /* Today Extension WidgetTests */,
+				60C313C11AC298C9002C6478 /* Used Space */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +301,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60C313C01AC298C9002C6478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C313CD1AC298C9002C6478 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +333,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60C313BE1AC298C9002C6478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C313CB1AC298C9002C6478 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +348,11 @@
 			isa = PBXTargetDependency;
 			target = 60C313941AC29883002C6478 /* Today Extension Widget */;
 			targetProxy = 60C313AF1AC29883002C6478 /* PBXContainerItemProxy */;
+		};
+		60C313CF1AC298C9002C6478 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60C313C11AC298C9002C6478 /* Used Space */;
+			targetProxy = 60C313CE1AC298C9002C6478 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,6 +508,30 @@
 			};
 			name = Release;
 		};
+		60C313D21AC298C9002C6478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Used Space/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		60C313D31AC298C9002C6478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Used Space/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -420,6 +557,14 @@
 			buildConfigurations = (
 				60C313BC1AC29883002C6478 /* Debug */,
 				60C313BD1AC29883002C6478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		60C313D11AC298C9002C6478 /* Build configuration list for PBXNativeTarget "Used Space" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60C313D21AC298C9002C6478 /* Debug */,
+				60C313D31AC298C9002C6478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
